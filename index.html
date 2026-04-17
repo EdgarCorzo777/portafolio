@@ -1,60 +1,77 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pagina Principal</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <body>
+    <header>
+      <h1>Edgar Corzo</h1>
+      <nav>
+        <a href="#">Sobre mi</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </header>
 
+    <main>
+      <section>
+        <h2 class="titulo">Sobre mi</h2>
+        <p>
+          Hola mundo, mi nombre es Edgar David Corzo Londoño, tengo 22 años y
+          soy un programador en proceso, estoy aprendiendo Desarrollo de
+          Software en Riwi. Estoy disfrutando mucho este nuevo reto y voy a dar
+          lo mejor de mí. 🤖 Apasionado por la IA. 👾 Jugador empedernido. ⚽
+          Apasionado por el fútbol y las series de televisión. 🎮 En mi tiempo
+          libre juego a Resident Evil 4 y practico mi lógica de programación.
+        </p>
+      </section>
 
-</head>
+      <section>
+        <h2 class="titulo">Proyectos</h2>
 
-<body>
-  <header style="text-align: center;">
-    <h1 class="titulo">Edgar Corzo</h1>
-  </header>
+        <div class="proyectos-grid">
+          <div class="tarjeta">
+            <h3>Facebook</h3>
+            <a href="https://facebook.com" target="_blank">Visitar</a>
+          </div>
+          <div class="tarjeta">
+            <h3>Twitter</h3>
+            <a href="https://twitter.com" target="_blank">Visitar</a>
+          </div>
+          <div class="tarjeta">
+            <h3>Instagram</h3>
+            <a href="https://instagram.com" target="_blank">Visitar</a>
+          </div>
+        </div>
+      </section>
 
-  <nav>
+      <section>
+        <h2 class="titulo">Contacto</h2>
 
-    <section>
+        <form action="index.html" method="get">
+          <label for="">Nombre</label>
+          <input type="text" placeholder="Ingrese su nombre" /><br /><br />
+          <label for="">Numero</label>
+          <input type="number" placeholder="Ingrese su numero" /><br /><br />
+          <label for="">Correo</label>
+          <input type="email" placeholder="Ingrese su correo" /><br /><br />
 
-      <h2 class="titulo">Sobre mi</h2>
-      <p>
-        Hola mundo, mi nombre es Edgar David Corzo Londoño, tengo 22 años y soy un programador en proceso, estoy
-        aprendiendo Desarrollo de Software en Riwi. Estoy disfrutando mucho este
-        nuevo reto y voy a dar lo mejor de mí. 🤖 Apasionado por la IA. 👾 Jugador empedernido. ⚽ Apasionado por el
-        fútbol y las series de televisión. 🎮 En mi tiempo libre juego a Resident Evil 4 y practico mi lógica de
-        programación.
-      </p>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
 
-      <h2 class="titulo">Proyectos</h2>
-
-      <ul>
-        <li><a class="link" href="https://facebook.com" target="_blank">Facebook</a></li>
-        <li><a class="link" href="https://gmail.com" target="_blank">Gmail</a></li>
-        <li><a class="link" href="https://x.com" target="_blank">Twitter</a></li>
-      </ul>
-
-      <h2 class="titulo">Contacto</h2>
-
-      <form action="index.html" method="get">
-        <label for="">Nombre</label>
-        <input type="text" placeholder="Ingrese su nombre"><br><br>
-        <label for="">Numero</label>
-        <input type="number" placeholder="Ingrese su numero"><br><br>
-        <label for="">Correo</label>
-        <input type="email" placeholder="Ingrese su correo"><br><br>
-
-        <button type="submit">Enviar</button>
-      </form>
-
-      <br>
+    <footer>
+      <br />
       <a class="hipervinculo" href="mascotas.html">Ir a mascotas</a>
-
-    </section>
-  </nav>
-</body>
-
+    </footer>
+  </body>
 </html>

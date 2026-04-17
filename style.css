@@ -1,0 +1,107 @@
+/* Reset general - elimina márgenes y padding por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header - flexbox para distribuir el título y la navegación horizontalmente */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D3D3D3;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+/* Nav - flexbox para alinear los enlaces en fila con espacio entre ellos */
+nav {
+    display: flex;
+    gap: 12px;
+}
+
+/* Enlaces del nav - sin subrayado */
+nav a {
+    text-decoration: none;
+}
+
+/* Sección de proyectos - grid de 3 columnas iguales */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjeta individual de proyecto */
+.tarjeta {
+    background-color: #E6E6FA;
+    padding: 18px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/* Galería de mascotas - grid de 3 columnas iguales */
+.galeria {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Imágenes de la galería - tamaño uniforme con recorte */
+.galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Botón de hipervínculo - estilo de enlace como botón */
+.hipervinculo {
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+/* Hipervínculo - efecto hover */
+.hipervinculo:hover {
+    background-color: #202424;
+    color: hsl(207, 52%, 40%);
+}
+
+/* Títulos de sección - estilo con fondo de color */
+.titulo {
+    color: #fff;
+    background-color: #C5E0DC;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilos generales del cuerpo - fuente pixelada */
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+}
+
+/* Imágenes generales - bordes redondeados y sombra */
+img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+/* Imágenes - efecto de zoom al hacer hover */
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Fondo del cuerpo - imagen de fondo */
+body{
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/pixel-heart.png");
+
+}
